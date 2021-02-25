@@ -14,7 +14,7 @@ Feature: To check the highest rise and lowest faller on the FTSE100 index displa
     Then I can display it
 
   Scenario: Get Lowest Faller
-		Given that I can navigate to HL
+    Given that I can navigate to HL
     When I click on the Fallers link
     And I find the highest table entry
     Then I can display it
@@ -26,7 +26,7 @@ In order to organise the tests and make them easy to call in the step definition
 The below can be found in the `LandingPage.java` class.
 
 ```
-@FindBy(xpath = "//*[@id=\"view-constituents\"]/ul/li[2]/a")
+        @FindBy(xpath = "//*[@id=\"view-constituents\"]/ul/li[2]/a")
 	private WebElement risersLink;
 	@FindBy(xpath = "//*[@id=\"view-constituents\"]/ul/li[3]/a")
 	private WebElement fallersLink;
@@ -62,7 +62,7 @@ This is where we define the test for each step created using the framework creat
 
 ##### Examples 
 ```
-private static RemoteWebDriver driver;
+        private static RemoteWebDriver driver;
 	private String high;
 	private static LandingPage page;
 	private static RiserPage risers;
@@ -97,8 +97,8 @@ This is the class that will run the tests defined in the step definitions class,
 ```
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/cuke",
-				glue = "test.cuke.stepdefs",
-				stepNotifications = true)
+		glue = "test.cuke.stepdefs",
+		stepNotifications = true)
 public class CukeRunner {
 
 }
