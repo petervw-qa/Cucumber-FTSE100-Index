@@ -60,7 +60,7 @@ The below can be found in the `LandingPage.java` class.
 ### The Cuke Step Defintions
 This is where we define the test for each step created using the framework created in the `.feature` file.
 
-#####Examples 
+##### Examples 
 ```
 private static RemoteWebDriver driver;
 	private String high;
